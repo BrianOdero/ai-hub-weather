@@ -15,7 +15,6 @@
     --accent-purple: #a78bfa;
     --gradient-card: linear-gradient(135deg, #1a2332 0%, #0f1724 100%);
     --gradient-accent: linear-gradient(135deg, #4da8da 0%, #2dd4bf 100%);
-    --gradient-warm: linear-gradient(135deg, #f59e0b 0%, #f43f5e 100%);
     --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.4);
     --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.25);
     --radius-sm: 10px;
@@ -617,102 +616,7 @@ body::before {
     font-weight: 400;
 }
 
-.usage-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 16px;
-}
-
-.usage-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border-card);
-    border-radius: var(--radius-lg);
-    padding: 22px 20px;
-    box-shadow: var(--shadow-card);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    transition: all var(--transition-fast);
-}
-
-.usage-card:hover {
-    border-color: rgba(255, 255, 255, 0.12);
-}
-
-.usage-card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.usage-card-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: var(--radius-sm);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3rem;
-}
-
-.usage-card-icon.requests {
-    background: rgba(77, 168, 218, 0.15);
-}
-.usage-card-icon.ai {
-    background: rgba(167, 139, 250, 0.15);
-}
-.usage-card-icon.trees {
-    background: rgba(45, 212, 191, 0.15);
-}
-
-.usage-card-title {
-    font-weight: 600;
-    font-size: 0.85rem;
-    letter-spacing: 0.02em;
-}
-
-.usage-card-count {
-    font-size: 2rem;
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    line-height: 1;
-}
-
-.usage-card-limit {
-    font-size: 0.78rem;
-    color: var(--text-muted);
-}
-
-.progress-bar-container {
-    width: 100%;
-    height: 8px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.05);
-    overflow: hidden;
-}
-
-.progress-bar-fill {
-    height: 100%;
-    border-radius: 10px;
-    transition: width var(--transition-smooth);
-    background: var(--gradient-accent);
-}
-
-.progress-bar-fill.warning {
-    background: var(--gradient-warm);
-}
-
-.progress-bar-fill.danger {
-    background: var(--accent-rose);
-}
-
-.usage-percentage {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--text-muted);
-    text-align: right;
-}
-
+/* Skeleton loading */
 .skeleton {
     background: linear-gradient(90deg,
             rgba(255, 255, 255, 0.03) 25%,
@@ -744,10 +648,6 @@ body::before {
     height: 80px;
     width: 180px;
     border-radius: 12px;
-}
-.skeleton-card {
-    height: 140px;
-    border-radius: var(--radius-lg);
 }
 
 .empty-state {
@@ -831,9 +731,6 @@ body::before {
     .weather-details-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-    }
-    .usage-section {
-        grid-template-columns: 1fr;
     }
     .forecast-day-card {
         min-width: 85px;
