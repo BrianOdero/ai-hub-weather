@@ -193,7 +193,7 @@
         } else if (aiSummary && typeof aiSummary === 'object' && aiSummary.text) {
             dom.aiSummaryText.textContent = aiSummary.text;
         } else {
-            dom.aiSummaryText.textContent = 'No AI summary available for this location.';
+            dom.aiSummaryText.textContent = 'You are on the free plan. Please upgrade to use the AI feature.';
         }
 
         renderForecast(daily);
